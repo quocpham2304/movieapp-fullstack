@@ -1,4 +1,4 @@
-import dbConfig from "./db.config";
+import dbConfig from "./db.config.js";
 
 const tmdbEndpoints = {
     mediaList: ({ mediaType, mediaCategory, page }) => dbConfig.getUrl(

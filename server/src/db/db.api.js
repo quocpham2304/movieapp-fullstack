@@ -1,5 +1,5 @@
-import axiosClient from "../axios/axios.client";
-import dbEndpoints from "./db.endpoints"
+import axiosClient from "../axios/axios.client.js";
+import dbEndpoints from "./db.endpoints.js"
 
 const dbApi = {
     mediaList: async ({ mediaType, mediaCategory, page }) => await axiosClient.get(dbEndpoints.mediaList({ mediaType, mediaCategory, page })

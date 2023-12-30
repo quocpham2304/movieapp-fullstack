@@ -1,0 +1,66 @@
+.App {
+    font-family: "Ubuntu", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #light {
+    background-color: #f3ebf6;
+  }
+  
+  #dark {
+    background-color: #09050a;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body .main {
+    width: 400px;
+    height: 400px;
+  
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  }
+  
+  #light .main {
+    background-color: #fff;
+  }
+  
+  #dark .main {
+    background-color: #09050a;
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .main {
+      border-radius: 0px;
+    }
+  }
+  
+  .switch {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .switch label {
+    margin: 10px;
+  }
+  
+  #light .switch label {
+    color: black;
+  }
+  
+  #dark .switch label {
+    color: white;
+  }
+  

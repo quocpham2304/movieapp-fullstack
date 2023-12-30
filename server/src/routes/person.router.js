@@ -1,4 +1,4 @@
-import exportxpress from "express";
+import express from "express";
 import personController from "../controlers/person.controller.js";
 
 const router = express.Router({ mergeParams: true});

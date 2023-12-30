@@ -1,5 +1,5 @@
-import responseHandler from "../handlers/response.handler";
-import dbApi from "../db/db.api";
+import responseHandler from "../handlers/response.handler.js";
+import dbApi from "../db/db.api.js";
 
 const personDetail = async (req, res) => {
     try {

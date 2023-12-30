@@ -1,9 +1,9 @@
-import responseHandler from "../handlers/response.handler";
-import dbApi from "../db/db.api";
-import userModel from "../models/user.model";
-import favoriteModel from "../models/favorite.model";
-import reviewModel from "../models/review.model";
-import tokenMiddlerware from "../middlewares/token.middleware";
+import responseHandler from "../handlers/response.handler.js";
+import dbApi from "../db/db.api.js";
+import userModel from "../models/user.model.js";
+import favoriteModel from "../models/favorite.model.js";
+import reviewModel from "../models/review.model.js";
+import tokenMiddlerware from "../middlewares/token.middleware.js";
 
 const gerList = async (req, res) => {
     try {
