@@ -9,7 +9,9 @@ import menuConfigs from "../../configs/menuConfigs.js";
 const FooterLDP = () => {
     const { Text, Paragraph } = Typography
     return (
-        <Content style={{ height: "max-content", backgroundColor: 'black', marginTop:"100%" }}>
+        <Content
+        className='pc-footer' 
+        style={{ height: "max-content", backgroundColor: 'black', marginTop:"100%" }}>
             <Row>
                 <Col span={6} offset={2} style={{ left: "5%" }} >
                     {/* <img style={{ height: 150, }} src="https://quocpham2304.github.io/webtuyendungmindX/img/logo-a.png" /> */}

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.css"
 import { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactSwitch from "react-switch";
