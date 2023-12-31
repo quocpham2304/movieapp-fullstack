@@ -9,7 +9,7 @@ const store = configureStore({
     reducer: {
         user: userSlice,
         themeMode: themeModeSlice,
-        authoModal: authModalSlice,
+        authModal: authModalSlice,
         globalLoading: globalLoandingSlice, 
         appState: appStateSlice      
     }

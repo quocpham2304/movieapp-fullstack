@@ -5,6 +5,7 @@ import FooterLDP from '../childrenComponent/Footer';
 import HeaderLDP from '../childrenComponent/Header';
 import { Outlet } from 'react-router-dom';
 import GlobalLoading from '../childrenComponent/GlobalLoading';
+import AuthModal from '../childrenComponent/AuthModal';
 
 const { Header, Content, Footer } = Layout;
 const MainLayoutnew = () => {
@@ -17,8 +18,9 @@ const MainLayoutnew = () => {
       <GlobalLoading />
       {/* {GlobalLoading} */}
 
-      {/* {loading modal} */}
-      {/* {loading modal} */}
+      {/* {login modal} */}
+      <AuthModal/>
+      {/* {login modal} */}
 
       {/* {header} */}
       <Row>

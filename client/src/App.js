@@ -1,10 +1,8 @@
 import "./App.css"
 import { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ReactSwitch from "react-switch";
 import { ToastContainer } from "react-toastify";
 import PageWrapper from "./components/childrenComponent/PageWrapper";
-import MainLayout from "./components/layout/MainLayout";
 import routes from "./routes/routes";
 import MainLayoutnew from "./components/layout/MainLayoutnew";
 
@@ -12,15 +10,8 @@ import MainLayoutnew from "./components/layout/MainLayoutnew";
 export const ThemeContext = createContext(null);
 
 function App() {
-  // const [theme, setTheme] = useState("light");
-
-  // const handleChangeTheme = () => {
-  //   setTheme((curr) => (curr === "light" ? "dark" : "light"));
-  // };
   return (
     <>
-      
-    {/* <ThemeContext.Provider value={{ theme, handleChangeTheme }}> */}
       <ToastContainer
         position="bottom-left"
         autoClose={5000}
@@ -54,16 +45,7 @@ function App() {
             ))}
           </Route>
         </Routes>
-      </BrowserRouter>
-      {/* <div className="App" id={theme}>
-        <div className="switch">
-          <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-          <ReactSwitch onChange={handleChangeTheme} checked={theme === "dark"} />
-          
-        </div>
-      </div>  */}
-     {/* </ThemeContext.Provider> */}
-     
+      </BrowserRouter>    
     </>
   );
 }

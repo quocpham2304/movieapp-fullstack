@@ -55,7 +55,7 @@ const HeaderLDP = () => {
                                 })}
                             </Col>
                             <Col style={{ left: "100%" }}>
-                                {!user && <Menu.Item
+                                {!user && <Button
                                     style={{ backgroundColor: "red", borderColor: "red", color: "white" }}
                                     type="primary"
                                     onClick={() => dispatch(setAuthModalOpen(true))}
@@ -63,7 +63,7 @@ const HeaderLDP = () => {
                                 >
                                     Đăng Nhập
                                     {user && <Usermenu />}
-                                </Menu.Item>}
+                                </Button>}
                             </Col>
                         </Row>
                     </Menu>
@@ -94,7 +94,7 @@ const HeaderLDP = () => {
                                             </Menu.Item>
                                         )
                                     })}
-                                    {!user && <Menu.Item
+                                    {!user && <Button
                                         style={{ backgroundColor: "red", borderColor: "red", color: "white" }}
                                         type="primary"
                                         onClick={() => dispatch(setAuthModalOpen(true))}
@@ -102,7 +102,7 @@ const HeaderLDP = () => {
                                     >
                                         Đăng Nhập
                                         {user && <Usermenu />}
-                                    </Menu.Item>}
+                                    </Button>}
                                 </Col>
                             </Row>
                         </Menu>
