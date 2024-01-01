@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { setAuthModalOpen } from '../../redux/features/authModalSlice.js';
 import Logo from './Logo';
-// import SigninForm from "./SigninForm";
-// import SignupForm from "./SignupForm";
+import SignupForm from './SignupForm.js';
+import SigninForm from './SigninForm1.js';
+
 
 
 const actionState = {
@@ -28,14 +29,15 @@ const AuthModal = () => {
     const switchAuthState = (state) => setAction(state);
 
     return (
-        <>
-            <Modal title="Basic Modal" open={authModalOpen} onCancel={handleClose}>
-                {/* {action === actionState.signin && <SigninForm switchAuthState={() => switchAuthState(actionState.signup)} />}
-
-                {action === actionState.signup && <SignupForm switchAuthState={() => switchAuthState(actionState.signin)} />} */}
+        <div >
+            <Modal open={authModalOpen} onCancel={handleClose} style={{backgroundColor:"black"}}>
                 <Logo/>
+                {action === actionState.signin && <SigninForm switchAuthState={() => switchAuthState(actionState.signup)} />}
+
+                {action === actionState.signup && <SignupForm switchAuthState={() => switchAuthState(actionState.signin)} />}
+                
             </Modal>
-        </>
+        </div>
     )
 }
 

@@ -27,7 +27,7 @@ const MainLayoutnew = () => {
         <HeaderLDP />
       </Row>
       {/* {header} */}
-      <Content theme={theme}>
+      <Content theme={theme} style={{backgroundColor:"black", color:'white'}}>
         {/* {main} */}
         <Row>
           <Outlet />
