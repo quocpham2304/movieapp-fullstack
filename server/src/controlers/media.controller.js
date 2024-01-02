@@ -8,7 +8,7 @@ import tokenMiddlerware from "../middlewares/token.middleware.js";
 const gerList = async (req, res) => {
     try {
         const { page } = req.query
-        const { mdeiaType, mediaCategory } = req.params
+        const { mediaType, mediaCategory } = req.params
 
         const response = await dbApi.mediaList({ mediaType, mediaCategory, page })
 
